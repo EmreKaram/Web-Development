@@ -1,0 +1,24 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+p[class="white-text"]{
+  color: white;
+}
+
+div[class='box inner-box']{
+  background-color: red;
+}
+
+div[id="outer-box"]{
+  border: 10px solid purple;
+}
