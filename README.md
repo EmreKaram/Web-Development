@@ -9,6 +9,10 @@ In this course, you will learn the fundamentals of web development and build sev
 * Bootstrap: The CSS framework that makes it easier to design responsive and mobile-first websites.
 * Node.js: The JavaScript runtime that allows you to build server-side applications.
 * Express.js: The Node.js framework that simplifies building web applications and APIs.
+* MongoDB: The NoSQL database used for storing and retrieving data in web applications.
+* Mongoose: The object data modeling (ODM) library for MongoDB that makes it easier to work with data in Node.js.
+* React.js: The JavaScript library used for building user interfaces in web applications.
+* Authentication and Security: The principles and techniques used to secure web applications and authenticate users.
 By the end of the course, you will have a solid foundation in web development and the skills to build your own web projects.
 ## Installation
 Before you can start working on the course projects, you need to set up your development environment. Here's how:
