@@ -20,7 +20,7 @@ Before you can start working on the course projects, you need to set up your dev
 2. Clone this repository: You can clone this repository by running the following command in your terminal or command prompt:
 ```bash
 {
-    git clone https://github.com/username/project-name.git
+    git clone https://github.com/EmreKaram/Web-Development.git
 }
 ```
 Install project dependencies: Navigate to the project directory in your terminal or command prompt and run the following command:
