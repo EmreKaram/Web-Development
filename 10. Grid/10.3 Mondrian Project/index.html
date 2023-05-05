@@ -9,21 +9,91 @@
     /* 
     Write your CSS here 
     Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
+    -White: #F0F1EC
+    -Red: #E72F24
+    -Black: #232629
+    -Blue: #004592
+    -Yellow: #F9D01E
 
     For dimensions, see dimensions.png image.
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    body {
+      display: flex; /*Responsive olması için*/
+      justify-content: center; /*Projenin tam ortada olması için*/
+      align-items: center; /*Projenin tam ortada olması için*/
+      height: 100vh; /*Projenin ekranı tam kaplaması için*/
+      margin: 0; /*Boşluk olmasın diye*/
+      padding: 0; /*Boşluk olmasın diye*/
+    }
+
+    .container {
+      height: 748px; /*Ekran ayarlaması*/
+      width: 748px; /*Ekran ayarlaması*/
+      display: grid; /*Displayin grid türünde olduğunu belirtiyoruz*/
+      background-color: #000; /*bunu yapmamın sebebi istediğim renkte gap belirleyebilmek*/
+      grid-template-columns: 320px 198px 153px 50px; /*Genişlikte baştan sona kadar ki tüm değerler*/
+      grid-template-rows: 414px 130px 155px 22px; /*Uzunluktaki baştan sona kadar ki tüm değerler 
+      ancak sonuncusunu 22px yapıyoruz çünkü 20 yaparsak background color altdan gözüküyor*/
+      gap: 9px; /*gap boyutu*/
+    }
+    
+    .item {
+      background-color: #F0F1EC; /*Arka plan rengi*/
+    }
+
+    .red {
+      background-color: #E72F24; /*Arka plan rengi*/
+    }
+
+    .white1 {
+      grid-column: span 3; /*White1 3 columnluk yer kaplasın*/
+    }
+
+    .white2 {
+      grid-row: span 2; /*White2 2 rowluk yer kaplasın*/
+    }
+
+    .white3 {
+      grid-area: 2 / 2 / 4 /4 /*???????*/
+    }
+
+    .blue {
+      background-color:#004592; /*Arka plan rengi*/
+      border-bottom: 10px solid #000;  /*goal de gözüktüğü gibi item blue'nun 
+      altında ekstra bir border var burada onu ayarlıyoruz*/
+    }
+
+    .white4 {
+      grid-row: span 2; /*White4 2 rowluk yer kaplasın*/
+    }
+
+    .yellow {
+      background-color:#F9D01E; /*Arka plan rengi*/
+    }
+
+    .black {
+      background-color:#232629; /*Arka plan rengi*/
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+
+    <div class="item"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+  </div>
 </body>
 
 </html>
