@@ -13,6 +13,8 @@ In this course, you will learn the fundamentals of web development and build sev
 * Mongoose: The object data modeling (ODM) library for MongoDB that makes it easier to work with data in Node.js.
 * React.js: The JavaScript library used for building user interfaces in web applications.
 * Authentication and Security: The principles and techniques used to secure web applications and authenticate users.
+* Web3: Web3 is a next-generation internet technology that enables decentralized applications and services to be built on top of it. It is like a new type of infrastructure that operates differently from the current internet.
+  
 By the end of the course, you will have a solid foundation in web development and the skills to build your own web projects.
 ## Installation
 Before you can start working on the course projects, you need to set up your development environment. Here's how:
