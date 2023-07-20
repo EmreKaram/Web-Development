@@ -1,3 +1,9 @@
 h1 {
   color: red;
 }
+
+.huge {
+  font-size: 10rem;
+  color: red;
+  font-weight: 200;
+}
