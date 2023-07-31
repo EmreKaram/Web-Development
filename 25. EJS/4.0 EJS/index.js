@@ -8,12 +8,12 @@ app.get("/", (req, res) => {
     const day = today.getDay();
 
     console.log(day);
-    let type = " a weekday";
-    let adv = " it's time to work hard"
+    let type = "a weekday";
+    let adv = "it's time to work hard"
 
     if (day === 0 || day === 6) {
-        type = " the weekend";
-        adv = " it's time to have some fun";
+        type = "the weekend";
+        adv = "it's time to have some fun";
     }
 
   res.render("index.ejs", {
