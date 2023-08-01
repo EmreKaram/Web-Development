@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   if (value) {
     res.sendFile(__dirname + "/public/secret.html");
-} else {
+  } else {
     res.sendFile(__dirname + "/public/index.html");
   }
 });
