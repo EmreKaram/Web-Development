@@ -8,49 +8,49 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
-// Work
-let todoWorkList = [{ idWork: 1, taskWork: "Work" }];
+const todoLists = {
+  work: [{ id: 1, task: "Work" }],
+  daily: [{ id: 1, task: "Daily" }],
+};
 
+function addTodo(listName, task) {
+  const newList = todoLists[listName];
+  const newTodo = { id: newList.length + 1, task };
+  newList.push(newTodo);
+}
+
+function deleteTodo(listName, todoId) {
+  const list = todoLists[listName];
+  todoLists[listName] = list.filter((todo) => todo.id !== todoId);
+}
+
+// Work
 app.get("/", (req, res) => {
-  res.render("index.ejs", { todoWorkList });
+  res.render("index.ejs", { todoList: todoLists.work });
 });
 
 app.post("/addWork", (req, res) => {
-  const newTodoWork = {
-    idWork: todoWorkList.length + 1,
-    taskWork: req.body.taskWork,
-  };
-  todoWorkList.push(newTodoWork);
+  addTodo("work", req.body.taskWork);
   res.redirect("/");
 });
 
-app.delete("/deleteWork/:idWork", (req, res) => {
-  const todoWorkId = parseInt(req.params.idWork);
-  todoWorkList = todoWorkList.filter((todoW) => todoW.idWork !== todoWorkId);
+app.delete("/deleteWork/:id", (req, res) => {
+  deleteTodo("work", parseInt(req.params.id));
   res.sendStatus(204);
 });
 
 // Daily
-let todoDailyList = [{ idDaily: 1, taskDaily: "Daily" }];
-
 app.get("/daily", (req, res) => {
-  res.render("daily.ejs", { todoDailyList });
+  res.render("daily.ejs", { todoList: todoLists.daily });
 });
 
 app.post("/addDaily", (req, res) => {
-  const newTodoDaily = {
-    idDaily: todoDailyList.length + 1,
-    taskDaily: req.body.taskDaily,
-  };
-  todoDailyList.push(newTodoDaily);
+  addTodo("daily", req.body.taskDaily);
   res.redirect("/daily");
 });
 
-app.delete("/deleteDaily/:idDaily", (req, res) => {
-  const todoDailyId = parseInt(req.params.idDaily);
-  todoDailyList = todoDailyList.filter(
-    (todoD) => todoD.idDaily !== todoDailyId
-  );
+app.delete("/deleteDaily/:id", (req, res) => {
+  deleteTodo("daily", parseInt(req.params.id));
   res.sendStatus(204);
 });
 

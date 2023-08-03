@@ -3,19 +3,16 @@ body {
   color: black;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -23,19 +20,12 @@ h1 {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  width: 100%;
-}
-
-.footer {
-  height: 100px;
-  margin: auto;
-  width: 400px;
+  left: 0;
+  background-color: #3b71ca;
+  padding: 20px;
   text-align: center;
-  padding: 5px;
-  color: #ffffff;
-  align-items: center;
 }
 
 .item {
@@ -43,6 +33,16 @@ footer {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #3b71ca;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itemless {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .box {
@@ -50,17 +50,109 @@ footer {
   margin: 50px auto;
   background: white;
   border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 150px;
+  margin-top: 25px;
+}
+
+.cube {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 25px;
 }
 
 div {
   display: block;
 }
 
-p, button, input {
+p,
+button,
+input {
   font-size: 1.25rem;
 }
 
-form, .item {
+.task {
+  border: 0;
+  display: flex;
   padding-left: 10px;
   padding-right: 10px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.blue {
+  color: #3b71ca;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Box */
+@media (max-width: 768px) {
+  .box {
+    max-width: 90%;
+  }
 }

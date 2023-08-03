@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>To-Do List Application</title>
-</head>
-
-<body>
-    <main>
+  </head>
+  <nav>
+    <div class="container">
+      <a class="navbar-brand" href="/">made by Emre Karamahmut</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="navW" class="nav-link active" href="/">Work</a>
+        </li>
+        <li class="nav-item">
+          <a id="navD" class="nav-link" href="/daily">Daily</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentPageUrl = window.location.pathname;
+        var navW = document.getElementById("navW");
+        var navD = document.getElementById("navD");
+        if (currentPageUrl === "/") {
+          navW.classList.add("active");
+          navD.classList.remove("active");
+        } else if (currentPageUrl === "/daily") {
+          navW.classList.remove("active");
+          navD.classList.add("active");
+        }
+      });
+    </script>
