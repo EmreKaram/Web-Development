@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+<div class="box">
+  <% todoDailyList.forEach(todoD => { %>
+  <div class="item">
+    <input
+      type="checkbox"
+      name="todoD"
+      value="<%= todoD.idDaily %>"
+      onclick="deleteDaily('<%= todoD.idDaily %>')"
+    />
+    <p><%= todoD.taskDaily %></p>
+  </div>
+  <% }); %>
+  <form class="item" action="/addDaily" method="post">
+    <div class="item">
+      <input type="text" name="taskDaily" placeholder="New Task" />
+    </div>
+    <button type="submit" value="ok">+</button>
+  </form>
+</div>
+<script>
+  function deleteDaily(todoDailyId) {
+    fetch(`/deleteDaily/${todoDailyId}`, { method: "DELETE" })
+      .then(() => window.location.reload())
+      .catch((err) =>
+        console.error("An error occurred during the deletion process::", err)
+      );
+  }
+</script>
+<%- include("partials/footer.ejs") %>
