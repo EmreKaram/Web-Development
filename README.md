@@ -34,7 +34,7 @@ Install project dependencies: Navigate to the project directory in your terminal
 ```
 ## Usage
 To run the projects, navigate to the project directory in your terminal or command prompt and run the following command:
-```sql
+```bash
 {
     npm start
 }
