@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Weather App</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="response-area">
+        <% if (locals.content) { %>
+        <p><%= temperature %></p>
+        <% } else { %>
+        <p>Please write a city</p>
+        <% } %>
+      </div>
+      <form id="myForm" method="post">
+        <label for="idCity">City Name:</label>
+        <input type="text" id="idCity" name="city" />
+
+        <label for="submit"></label>
+        <input
+          id="get"
+          type="submit"
+          value="Get Weather"
+          formaction="/get-weather"
+        />
+      </form>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <%= new Date().getFullYear() %> Weather App by Emre Karam</p>
+    </div>
+  </footer>
+</html>
