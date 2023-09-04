@@ -20,8 +20,10 @@ app.post("/get-weather", async (req, res) => {
     const result = await axios.get(
       API_URL + `/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`
     );
+    console.log(result.data);
     const temperature = result.data.main.temp;
-    res.render("index.ejs", { content: JSON.stringify(result.data), temperature });
+    const nameOfCity = result.data.name;
+    res.render("index.ejs", { content: JSON.stringify(result.data), temperature, nameOfCity});
   } catch (error) {
     console.log(error.response.data);
     res.status(500).send("An error occurred");

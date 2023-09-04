@@ -21,10 +21,11 @@
     </header>
     <div class="container">
       <div class="response-area">
-        <% if (locals.content) { %>
-        <p><%= temperature %></p>
+        <% if (locals.temperature) { %>
+        <p>Temperature: <%= temperature %>°C</p>
+        <p>Name of the City: <%= nameOfCity %></p>
         <% } else { %>
-        <p>Please write a city</p>
+        <p>Please write</p>
         <% } %>
       </div>
       <form id="myForm" method="post">
