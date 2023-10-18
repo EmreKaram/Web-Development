@@ -1,0 +1,31 @@
+Access to MongoDB Shell:
+
+If you have installed MongoDB on your computer, open the terminal or command prompt.
+Then run the command mongo to access the MongoDB Shell.
+Databases and Collections:
+
+In MongoDB, data is stored in databases within collections.
+To view existing databases, you can use the command show dbs.
+To switch to a database, use the command use database_name. (If the database doesn't exist, a new one will be created.)
+Collection Operations:
+
+To create a collection: db.createCollection("collection_name")
+To view existing collections: show collections
+To delete a collection: db.collection_name.drop()
+Adding and Updating Documents:
+
+To add a new document: db.collection_name.insert({ field1: value1, field2: value2, ... })
+To update a document: db.collection_name.update({ criteria }, { new_values })
+Querying Documents:
+
+To view all documents: db.collection_name.find()
+To view documents that meet specific criteria: db.collection_name.find({ field: value })
+Deleting Documents:
+
+To delete documents that meet specific criteria: db.collection_name.remove({ field: value })
+Closing MongoDB Shell:
+
+To close the Shell, you can use the command exit.
+Other Commands:
+
+To see other commands you can use in MongoDB Shell, you can use the help command.
