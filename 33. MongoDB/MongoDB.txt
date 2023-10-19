@@ -29,3 +29,26 @@ To close the Shell, you can use the command exit.
 Other Commands:
 
 To see other commands you can use in MongoDB Shell, you can use the help command.
+
+
+One to many relationship
+db.products.insertOne(
+    {
+        _id: 2,
+        name: "Pencil",
+        price: 0.80,
+        stock: 30,
+        reviews: [
+            {
+                authorName: "Sally",
+                rating: 5,
+                review: "Best Pencil ever!"
+            },    
+            {
+                authorName: "John",
+                rating: 4,
+                review: "Awesome Pencil!"
+            }
+        ]
+    }
+)
