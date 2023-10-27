@@ -41,6 +41,11 @@ app.get("/register", function (req, res) {
   res.render("register");
 });
 
+app.get("/logout", function (req, res) {
+  req.logout();
+  res.redirect("/");
+});
+
 app.post("/register", async function (req, res) {
   try {
     const newUser = new User({
