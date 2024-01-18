@@ -1,6 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: blanchedalmond;
+.heading {
+  color: #61dafb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #999;
+}
+
+.test-img {
+  width: 200px;
+  height: 200px;
 }
