@@ -71,7 +71,7 @@ ReactDOM.render(
       />
       <img src={randomImg + "?grayscale"} alt="Gray Scale Random" />
     </div>
-    <h4 style={{ color: "blue" }}>Inline style change</h4>
+    <h4 style={{ color: "green" }}>Inline style change</h4>
     <h5 style={customStyleTest}>Custom style object</h5>
     <h1 className="timeMachine" style={styleTime}>{timeMessage}</h1>
   </div>,
