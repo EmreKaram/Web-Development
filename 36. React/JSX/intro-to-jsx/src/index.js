@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
+import pi, { doublePi, triplePi } from "./math.js";
+// import * as pi from "./math.js"; // this is how we import all functions from math.js
 
 const fName = "Emre";
 
@@ -73,7 +75,15 @@ ReactDOM.render(
     </div>
     <h4 style={{ color: "green" }}>Inline style change</h4>
     <h5 style={customStyleTest}>Custom style object</h5>
-    <h1 className="timeMachine" style={styleTime}>{timeMessage}</h1>
+    <h1 className="timeMachine" style={styleTime}>
+      {timeMessage}
+    </h1>
+    <ul>
+      <li>{pi}</li>
+      <li>{doublePi()}</li>
+      <li>{triplePi()}</li>
+    </ul>
   </div>,
+  // li>{pi.doublePi()}</li> this is how we call functions from math.js
   document.getElementById("root")
 );
