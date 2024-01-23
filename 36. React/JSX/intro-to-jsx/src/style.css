@@ -2,6 +2,12 @@
   color: #61dafb;
 }
 
+.timeMachine {
+  font-size: large;
+  font-family: monospace;
+  font-style: italic;
+}
+
 ul {
   list-style: none;
   padding: 0;

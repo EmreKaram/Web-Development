@@ -12,6 +12,8 @@ const currentDate = new Date();
 
 const currentYear = currentDate.getFullYear();
 
+const currentTime = currentDate.getHours();
+
 const randomImg = "https://picsum.photos/200";
 
 const customStyleTest = {
@@ -21,17 +23,18 @@ const customStyleTest = {
 };
 
 var styleTime = {
-  color: "black",
-  fontSize: "20px",
+  color: "",
+  fontSize: "",
 };
+
 var timeMessage = "";
 
-if (currentDate.getHours() < 12) {
+if (currentTime < 12) {
   // 0-11 is AM
   styleTime.color = "red";
   styleTime.fontSize = "20px";
   timeMessage = "Good Morning";
-} else if (currentDate.getHours() < 18) {
+} else if (currentTime < 18) {
   // 12-17 is PM
   styleTime.color = "green";
   styleTime.fontSize = "20px";
@@ -70,7 +73,7 @@ ReactDOM.render(
     </div>
     <h4 style={{ color: "blue" }}>Inline style change</h4>
     <h5 style={customStyleTest}>Custom style object</h5>
-    <h1 style={styleTime}>{timeMessage}</h1>
+    <h1 className="timeMachine" style={styleTime}>{timeMessage}</h1>
   </div>,
   document.getElementById("root")
 );
