@@ -49,6 +49,17 @@ if (currentTime < 12) {
   timeMessage = "Good Night";
 }
 
+function Card(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <img height={200} src={props.img} alt="emre github"/>
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+    </div>
+  );
+}
+
 ReactDOM.render(
   <div>
     <h1 className="heading" contentEditable="true" spellCheck="false">
@@ -90,6 +101,12 @@ ReactDOM.render(
       <li>{Calculator.multiply(10, 2)}</li>
       <li>{Calculator.subtract(8, 5)}</li>
     </ul>
+    <Card
+      name="Emre"
+      img="https://avatars.githubusercontent.com/u/89421012?v=4"
+      tel="1231234"
+      email="emre@gmail.com"
+    />
   </div>,
   // li>{pi.doublePi()}</li> this is how we call functions from math.js
   document.getElementById("root")
