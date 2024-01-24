@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./style.css";
 import pi, { doublePi, triplePi } from "./math.js";
 // import * as pi from "./math.js"; // this is how we import all functions from math.js
+import * as Calculator from "./calculator.js";
 
 const fName = "Emre";
 
@@ -82,6 +83,12 @@ ReactDOM.render(
       <li>{pi}</li>
       <li>{doublePi()}</li>
       <li>{triplePi()}</li>
+    </ul>
+    <ul>
+      <li>{Calculator.add(1, 2)}</li>
+      <li>{Calculator.divide(10, 2)}</li>
+      <li>{Calculator.multiply(10, 2)}</li>
+      <li>{Calculator.subtract(8, 5)}</li>
     </ul>
   </div>,
   // li>{pi.doublePi()}</li> this is how we call functions from math.js
