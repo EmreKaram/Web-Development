@@ -1,12 +1,7 @@
 import React from "react";
 
 function Detail(props) {
-  return (
-    <detail>
-      <p className="info">{props.tel}</p>
-      <p className="info">{props.email}</p>
-    </detail>
-  );
+  return <p className="info">{props.detailInfo}</p>;
 }
 
 export default Detail;
