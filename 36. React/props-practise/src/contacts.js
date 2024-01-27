@@ -20,6 +20,13 @@ const contacts = [
     tel: "+918 372 574",
     email: "gmail@chucknorris.com",
   },
+  {
+    name: "Şükrü Karamahmut",
+    imgURL:
+      "https://hips.hearstapps.com/hmg-prod/images/david-beckham-career-651da8b878f85.jpg?crop=0.716xw:1.00xh;0.162xw,0&resize=1200:*",
+    tel: "+918 372 574",
+    email: "sukru@hotmail.com",
+  },
 ];
 
 export default contacts;
