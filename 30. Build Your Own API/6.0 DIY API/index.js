@@ -654,7 +654,7 @@ var jokes = [
     id: 99,
     jokeText:
       "Parallel lines have so much in common. It's a shame they'll never meet.",
-    jokeType: "Math",
+    jokeType: "Maths",
   },
   {
     id: 100,

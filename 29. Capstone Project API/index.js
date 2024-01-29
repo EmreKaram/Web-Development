@@ -23,7 +23,11 @@ app.post("/get-weather", async (req, res) => {
     console.log(result.data);
     const temperature = result.data.main.temp;
     const nameOfCity = result.data.name;
-    res.render("index.ejs", { content: JSON.stringify(result.data), temperature, nameOfCity});
+    res.render("index.ejs", {
+      content: JSON.stringify(result.data),
+      temperature,
+      nameOfCity,
+    });
   } catch (error) {
     console.log(error.response.data);
     res.status(500).send("An error occurred");

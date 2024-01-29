@@ -1,51 +1,56 @@
-SQL (Structured Query Language) - Detailed Note
-Introduction:
-SQL, which stands for Structured Query Language, is a powerful language designed for managing, querying, and manipulating relational databases. It is a standard language for interacting with databases and is widely used in various industries for data management.
-
-Key Concepts:
-1. Relational Databases:
-SQL is primarily used with relational databases, which organize data in tables with rows and columns. These tables can be related to each other through common fields, forming relationships.
-2. Tables:
-Tables are the fundamental structure in a relational database. They consist of rows (records) and columns (fields) which hold specific data.
-3. Data Types:
-SQL supports various data types like integers, decimals, strings, dates, and more. These define the kind of data that can be stored in a particular column.
-4. Queries:
-SQL allows users to write queries to retrieve specific data from a database. The SELECT statement is used for this purpose.
-5. CRUD Operations:
-SQL supports four main operations on data:
-Create (INSERT)
-Read (SELECT)
-Update (UPDATE)
-Delete (DELETE)
-6. Joins:
-Joins allow for combining data from multiple tables based on related columns. Common types of joins include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
-7. Aggregation Functions:
-SQL provides functions like COUNT, SUM, AVG, MIN, and MAX for performing calculations on groups of data.
-8. Constraints:
-Constraints are rules applied to columns to enforce data integrity. Examples include primary keys, foreign keys, unique constraints, and check constraints.
-9. Indexes:
-Indexes are used to optimize query performance by allowing faster retrieval of data from a table.
-10. Subqueries:
-Subqueries are queries embedded within another query. They are useful for performing complex operations and filtering data.
-11. Transactions:
-Transactions ensure data integrity by grouping multiple SQL statements into a single unit. They are either committed (saved) or rolled back (undone) as a whole.
-Common SQL Commands:
-CREATE DATABASE: Used to create a new database.
-
-CREATE TABLE: Creates a new table in the database.
-
-INSERT INTO: Adds new records into a table.
-
-SELECT: Retrieves data from one or more tables.
-
-UPDATE: Modifies existing records in a table.
-
-DELETE FROM: Removes records from a table.
-
-JOIN: Combines records from two or more tables.
-
-GROUP BY: Groups rows that have the same values into summary rows.
-
-HAVING: Filters records returned by GROUP BY.
-
-ORDER BY: Sorts the result set in ascending or descending order.
+/**
+ * SQL (Structured Query Language) - Detailed Note
+ * 
+ * Introduction:
+ * SQL, which stands for Structured Query Language, is a powerful language designed for managing, querying, and manipulating relational databases. It is a standard language for interacting with databases and is widely used in various industries for data management.
+ * 
+ * Key Concepts:
+ * 1. Relational Databases:
+ * SQL is primarily used with relational databases, which organize data in tables with rows and columns. These tables can be related to each other through common fields, forming relationships.
+ * 
+ * 2. Tables:
+ * Tables are the fundamental structure in a relational database. They consist of rows (records) and columns (fields) which hold specific data.
+ * 
+ * 3. Data Types:
+ * SQL supports various data types like integers, decimals, strings, dates, and more. These define the kind of data that can be stored in a particular column.
+ * 
+ * 4. Queries:
+ * SQL allows users to write queries to retrieve specific data from a database. The SELECT statement is used for this purpose.
+ * 
+ * 5. CRUD Operations:
+ * SQL supports four main operations on data:
+ * - Create (INSERT)
+ * - Read (SELECT)
+ * - Update (UPDATE)
+ * - Delete (DELETE)
+ * 
+ * 6. Joins:
+ * Joins allow for combining data from multiple tables based on related columns. Common types of joins include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
+ * 
+ * 7. Aggregation Functions:
+ * SQL provides functions like COUNT, SUM, AVG, MIN, and MAX for performing calculations on groups of data.
+ * 
+ * 8. Constraints:
+ * Constraints are rules applied to columns to enforce data integrity. Examples include primary keys, foreign keys, unique constraints, and check constraints.
+ * 
+ * 9. Indexes:
+ * Indexes are used to optimize query performance by allowing faster retrieval of data from a table.
+ * 
+ * 10. Subqueries:
+ * Subqueries are queries embedded within another query. They are useful for performing complex operations and filtering data.
+ * 
+ * 11. Transactions:
+ * Transactions ensure data integrity by grouping multiple SQL statements into a single unit. They are either committed (saved) or rolled back (undone) as a whole.
+ * 
+ * Common SQL Commands:
+ * - CREATE DATABASE: Used to create a new database.
+ * - CREATE TABLE: Creates a new table in the database.
+ * - INSERT INTO: Adds new records into a table.
+ * - SELECT: Retrieves data from one or more tables.
+ * - UPDATE: Modifies existing records in a table.
+ * - DELETE FROM: Removes records from a table.
+ * - JOIN: Combines records from two or more tables.
+ * - GROUP BY: Groups rows that have the same values into summary rows.
+ * - HAVING: Filters records returned by GROUP BY.
+ * - ORDER BY: Sorts the result set in ascending or descending order.
+ */

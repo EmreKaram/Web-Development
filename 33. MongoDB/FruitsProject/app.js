@@ -71,5 +71,5 @@ async function findDocuments(db) {
     console.log(doc);
   });
 }
-// Call the 'run' function to start the database operations
+// Call the "run" function to start the database operations
 run().catch(console.dir); // Catch and log any errors that may occur during execution

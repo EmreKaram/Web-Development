@@ -20,7 +20,7 @@ db.connect();
 // Setting up middleware to parse incoming request bodies.
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serving static files from the 'public' directory.
+// Serving static files from the "public" directory.
 app.use(express.static("public"));
 
 // Function to check visited countries.

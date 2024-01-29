@@ -24,7 +24,7 @@ async function main() {
 
     console.log("Fruit saved successfully!");
   } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
+    console.error("Error! connecting to MongoDB:", error);
   }
 }
 
