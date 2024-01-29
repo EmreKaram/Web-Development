@@ -6,13 +6,13 @@ Welcome to the Web Development Course! This repository contains the topics and p
 
 In this course, you will learn the fundamentals of web development and build several projects that showcase your skills. The course covers the following topics:
 
-- HTML: The foundation of every web page.
-- CSS: The styling language used to make websites look visually appealing.
-- JavaScript: The programming language used to add interactivity to websites.
+- HTML 5: The foundation of every web page.
+- CSS 3: The styling language used to make websites look visually appealing.
+- JavaScript ES6: The programming language used to add interactivity to websites.
 - Bootstrap: The CSS framework that makes it easier to design responsive and mobile-first websites.
 - Node.js: The JavaScript runtime that allows you to build server-side applications.
 - Express.js: The Node.js framework that simplifies building web applications and APIs.
-- PostgreSQL:
+- PostgreSQL: PostgreSQL is an open-source relational database management system known for its robustness, scalability, and extensive feature set, using SQL for data manipulation.
 - MongoDB: The NoSQL database used for storing and retrieving data in web applications.
 - Mongoose: The object data modeling (ODM) library for MongoDB that makes it easier to work with data in Node.js.
 - React.js: The JavaScript library used for building user interfaces in web applications.
