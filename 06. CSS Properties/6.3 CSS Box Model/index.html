@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Box Model</title>
+    <style>
+      /* Write your CSS code here */
+      div {
+        height: 200px;
+        width: 200px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Box Model</title>
-  <style>
-    /* Write your CSS code here */
-div{
-  height: 200px;
-  width: 200px;
-}
+      .first {
+        background-color: cadetblue;
+        border: 10px solid black;
+        padding: 20px;
+      }
 
-.first{
-  background-color: cadetblue;
-  border: 10px solid black;
-  padding: 20px;
-}
+      .second {
+        background-color: gold;
+        border-top: 20px solid black;
+        border-bottom: 20px solid black;
+        border-right: 10px solid black;
+        border-left: 10px solid black;
+        margin-left: 260px;
+      }
 
-.second{
-  background-color: gold;
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;
-  border-right: 10px solid black;
-  border-left: 10px solid black;
-  margin-left: 260px;
-}
+      .third {
+        background-color: indianred;
+        border: 10px solid black;
+        margin-left: 40px;
+      }
 
-.third{
-  background-color: indianred;
-  border: 10px solid black;
-  margin-left: 40px;
-}
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
 
-p{
-  margin: 0;
-}
+  <body>
+    <div class="first">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+        sapien porttitor urna elementum lacinia. In id magna pulvinar, ultricies
+        lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque
+        magna. Phasellus dolor metus, laoreet ac convallis sit amet, efficitur
+        sed dolor.
+      </p>
+    </div>
 
-  </style>
-</head>
+    <div class="second"></div>
 
-<body>
+    <div class="third"></div>
 
-<div class="first">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
-    id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
-    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>
-</div>
-
-<div class="second">
-
-</div>
-
-<div class="third">
-
-</div>
-
-  <!-- TODOs:
+    <!-- TODOs:
 1. Create 3 Boxes using the div element.
 2. Set their sizes to 200px heigh by 200px wide.
 3. Set different background colors for each of the boxes (I used cadetblue, gold and indianred).
@@ -70,7 +67,5 @@ Hint: Use the CSS inspector in Chrome.
 8. Set the 3rd div to have a 10px border 
 9. Set the margins for the divs so that each box corner touches the other. (See the goal image)
 -->
-
-</body>
-
+  </body>
 </html>
